@@ -1,12 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import Link from 'next/link'
-import Title from '../components/Title'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import GlobalStyle from '../components/GlobalStyle'
-import AboutLeft from '../components/AboutLeft'
-import AboutRight from '../components/AboutRight'
+import React from 'react';
+import styled from 'styled-components';
+import Title from '../components/Title';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import GlobalStyle from '../components/GlobalStyle';
+import AboutLeft from '../components/AboutLeft';
+import AboutRight from '../components/AboutRight';
 
 const About = () => {
     return(

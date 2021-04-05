@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from 'next/link'
+import Link from 'next/link';
 
 const HomeList = () => {
     return(
@@ -16,7 +16,7 @@ const HomeList = () => {
     )
 }
 
-export default HomeList
+export default HomeList;
 
 const SListContent = styled.div`
     width: 50%;

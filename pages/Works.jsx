@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import Title from '../components/Title'
-import GlobalStyle from '../components/GlobalStyle'
-import Header from '../components/Header'
-import Footer from '../components/footer'
-import Work from '../components/Work'
+import React from 'react';
+import styled from 'styled-components';
+import Title from '../components/Title';
+import GlobalStyle from '../components/GlobalStyle';
+import Header from '../components/Header';
+import Footer from '../components/footer';
+import Work from '../components/Work';
 
 const Works = () => {
     return(

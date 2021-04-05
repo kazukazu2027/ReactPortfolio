@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const SkillContent = () => {
   return (
@@ -49,7 +49,7 @@ const SkillContent = () => {
   )
 }
 
-export default SkillContent
+export default SkillContent;
 
 const SSkills = styled.div`
     

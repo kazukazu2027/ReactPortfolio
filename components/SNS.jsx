@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const SNS = (props) => {
     const {snsTitle, snsImg, snsUrl} = props
@@ -13,7 +13,7 @@ const SNS = (props) => {
     )
 }
 
-export default SNS
+export default SNS;
 
 const SSnsTitle = styled.h2`
     font-size: 3rem;

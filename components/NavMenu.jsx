@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import styled from 'styled-components'
+import React from 'react';
+import Link from 'next/link';
+import styled from 'styled-components';
 
 const NavMenu = () => {
   return (
@@ -14,7 +14,7 @@ const NavMenu = () => {
   )
 }
 
-export default NavMenu
+export default NavMenu;
 
 
 

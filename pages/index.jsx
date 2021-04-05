@@ -1,12 +1,10 @@
-import Head from 'next/head'
-import styled from 'styled-components'
-import React from 'react'
-import Link from 'next/link'
-import Header from '../components/Header'
-import Footer from '../components/footer'
-import GlobalStyle from '../components/GlobalStyle'
-import HeaderList from '../components/HomeList'
-import HomeList from '../components/HomeList'
+import Head from 'next/head';
+import styled from 'styled-components';
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/footer';
+import GlobalStyle from '../components/GlobalStyle';
+import HomeList from '../components/HomeList';
 
 export default function Home() {
   return (

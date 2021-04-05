@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const AboutRight = () => {
     return(
@@ -23,10 +23,10 @@ const AboutRight = () => {
                 </tr>
             </STable>
         </SAboutRight>
-    )
-}
+    );
+};
 
-export default AboutRight
+export default AboutRight;
 
 const SAboutRight = styled.div`
     width: 40%;

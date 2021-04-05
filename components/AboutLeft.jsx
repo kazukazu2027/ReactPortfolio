@@ -1,15 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const AboutLeft = () => {
     return(
         <SAboutLeft>
             <SAboutProfile></SAboutProfile>
         </SAboutLeft>
-    )
-}
+    );
+};
 
-export default AboutLeft
+export default AboutLeft;
 
 const SAboutLeft = styled.div`
     width: 50%;

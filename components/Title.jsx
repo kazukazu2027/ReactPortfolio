@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Title = ( props ) => {
     return(
@@ -7,7 +7,7 @@ const Title = ( props ) => {
     )
 }
 
-export default Title
+export default Title;
 
 const STitle = styled.h1`
     font-size: 4rem;

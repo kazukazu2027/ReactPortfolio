@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Work = (props) => {
     const {imgSrc, workTitle, workIntroduction, Url } = props
@@ -19,7 +19,7 @@ const Work = (props) => {
     )
 }
 
-export default Work
+export default Work;
 
 const STodoList = styled.div`
     display: flex;

@@ -1,15 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const Footer = () => {
     return(
         <SFooter>
             <SCopyRight>Copyright © 2021 kazuki. All Rights Reserved.</SCopyRight>
         </SFooter>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
 
 const SFooter = styled.div`
     background-color: #404b75;
