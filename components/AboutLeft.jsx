@@ -21,7 +21,7 @@ const SAboutLeft = styled.div`
 
 const SAboutProfile = styled.div`
     border-radius: 50%;
-    background-image: url("/profile02.JPG");
+    background-image: url("/profile02.jpg");
     background-size: cover;
     width: 30rem;
     height: 30rem;
