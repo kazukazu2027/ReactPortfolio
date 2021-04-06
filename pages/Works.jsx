@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Title from '../components/Title';
 import GlobalStyle from '../components/GlobalStyle';
 import Header from '../components/Header';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Work from '../components/Work';
 
 const Works = () => {

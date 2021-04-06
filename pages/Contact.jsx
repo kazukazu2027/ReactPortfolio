@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Title from '../components/Title';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import GlobalStyle from '../components/GlobalStyle';
 import SNS from '../components/SNS';
 
