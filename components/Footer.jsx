@@ -21,7 +21,7 @@ const SFooter = styled.div`
     width: 100%;
     margin: 0;
     height: 5rem;
-    margin-bottom: -5rem;
+    // margin-bottom: -5rem;
 `;
 
 const SCopyRight = styled.p`
