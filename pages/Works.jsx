@@ -5,10 +5,15 @@ import GlobalStyle from '../components/GlobalStyle';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Work from '../components/Work';
+import Head from 'next/head';
 
 const Works = () => {
     return(
         <>
+            <Head>
+                <title>kazuki's portfolio</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <GlobalStyle />
             <Header />
             <SContentContainer>

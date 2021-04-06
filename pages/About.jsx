@@ -6,10 +6,15 @@ import Footer from '../components/Footer';
 import GlobalStyle from '../components/GlobalStyle';
 import AboutLeft from '../components/AboutLeft';
 import AboutRight from '../components/AboutRight';
+import Head from 'next/head';
 
 const About = () => {
     return(
         <>
+            <Head>
+                <title>kazuki's portfolio</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <GlobalStyle />
             <Header />
             <SAboutContainer>

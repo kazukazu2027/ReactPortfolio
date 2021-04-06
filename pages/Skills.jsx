@@ -5,10 +5,15 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import GlobalStyle from '../components/GlobalStyle';
 import SkillContent from '../components/SkillContent';
+import Head from 'next/head';
 
 const Skills = () => {
     return(
         <div>
+            <Head>
+                <title>kazuki's portfolio</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <GlobalStyle />
             <Header />
             <SSkillsContainer>
