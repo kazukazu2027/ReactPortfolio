@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import NavMenu from "./NavMenu";
 import Link from 'next/link';
-import SpMenu from "./SpMenu";
+import SpMenu from './SpMenu';
 
 
 const Header = () => {
