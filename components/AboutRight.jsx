@@ -68,6 +68,10 @@ const STable = styled.table`
     @media(max-width: 700px) {
         font-size: 2.5rem;
     }
+    @media(max-width: 450px) {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
 `;
 
 const SSecondTd = styled.td`
