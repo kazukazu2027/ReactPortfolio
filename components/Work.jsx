@@ -46,6 +46,7 @@ const SPicture = styled.div`
     }
     @media(max-width:450px) {
         width: 100%;
+        margin-left: initial;
     }
 `;
 
@@ -76,5 +77,6 @@ const SWorkIntroduction = styled.p`
     @media(max-width:700px) {
         word-break: break-all;
         width: 120%;
+        margin-bottom: 3rem;
     }
 `;

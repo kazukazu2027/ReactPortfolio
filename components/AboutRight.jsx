@@ -34,6 +34,9 @@ const SAboutRight = styled.div`
         width: 80%;
         margin: 0 auto;
     }
+    @media(max-width: 600px) {
+        margin-bottom: 4rem;
+    }
     @media(max-width: 450px) {
         width: 80%;
         margin: 0 auto;

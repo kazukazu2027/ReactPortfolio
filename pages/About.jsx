@@ -37,6 +37,7 @@ const SAboutMain = styled.div`
     @media(max-width: 800px) {
         display: block;
     }
+    
 `;
 
 const SAboutContainer = styled.div`

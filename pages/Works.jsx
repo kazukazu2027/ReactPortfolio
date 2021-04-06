@@ -21,7 +21,7 @@ const Works = () => {
                 <SWorkContainer>
                     <Work imgSrc="todolist.png" Url="http://kazukazu2027.github.io/reactTodoList" workTitle="TODOリスト"  workIntroduction="Reactを用いてTODOリストを作成しました。React Hookで実装しています。" />
                     <Work imgSrc="pictureSearch.png" Url="http://kazukazu2027.github.io/pictureSearch" workTitle="画像検索アプリ"  workIntroduction="Reactを用いて画像検索アプリを作成しました。画像は非同期処理を用いて表示させています。また、styled-componentsを採用し、検索ボタンはmaterial-uiを用いて作成しました。" />
-                    <Work imgSrc="portfolio.png" workTitle="ポートフォリオ"  workIntroduction="ReactとNEXT.jsを用いてポートフォリオを作成しました。デプロイはVercelを使っています。" />
+                    <Work imgSrc="portfolio.png" Url="https://portfolioreact-ibr233y61-kazukazu2027.vercel.app/" workTitle="ポートフォリオ"  workIntroduction="ReactとNext.jsを用いてポートフォリオを作成しました。デプロイはVercelを使っています。" />
                 </SWorkContainer>
             </SContentContainer>
             <Footer />
