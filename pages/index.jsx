@@ -1,30 +1,23 @@
-import Head from 'next/head';
-import styled from 'styled-components';
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import GlobalStyle from '../components/GlobalStyle';
-import HomeList from '../components/HomeList';
+import Head from "next/head";
+import styled from "styled-components";
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import GlobalStyle from "../components/GlobalStyle";
+import HomeList from "../components/HomeList";
 
 export default function Home() {
   return (
     <>
       <GlobalStyle />
-      <Head>
-        <title>kazuki's portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+
       <SBody>
         <Header />
         <SContainer>
           <SHomeContent>
             <SHomeLeft>
-              <STitle>
-                Welcome to kazuki's portfolio
-              </STitle>
-              <SLead>
-                Thank you for visiting the Website.
-              </SLead>
+              <STitle>Welcome to kazuki's portfolio</STitle>
+              <SLead>Thank you for visiting the Website.</SLead>
             </SHomeLeft>
             <HomeList />
           </SHomeContent>
@@ -32,9 +25,7 @@ export default function Home() {
         <Footer />
       </SBody>
     </>
-
-
-  )
+  );
 }
 
 const SBody = styled.div`
@@ -47,10 +38,10 @@ const SBody = styled.div`
 const SContainer = styled.div`
   width: 80%;
   margin: 0 auto;
-`
+`;
 const SHomeContent = styled.div`
   display: flex;
-  @media(max-width: 600px){
+  @media (max-width: 600px) {
     display: block;
   }
 `;
@@ -58,7 +49,7 @@ const SHomeContent = styled.div`
 const SHomeLeft = styled.div`
   width: 50%;
   padding-top: 20rem;
-  @media(max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
     padding-top: 6rem;
   }
@@ -73,7 +64,7 @@ const STitle = styled.h1`
 const SLead = styled.p`
   font-size: 3.5rem;
   padding-top: 7rem;
-  @media(max-width: 600px){
+  @media (max-width: 600px) {
     padding: 3rem 0;
   }
 `;

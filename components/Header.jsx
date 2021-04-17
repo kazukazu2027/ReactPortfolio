@@ -1,26 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import Link from 'next/link';
-import SpMenu from '../Menus/SpMenu';
+import Link from "next/link";
+import SpMenu from "../Menus/SpMenu";
 import NavMenu from "../Menus/NavMenu";
 
-
 const Header = () => {
-    return(
-      <>
-        <SHeader>
-            <SHeaderContainer>
-                <Link href="/"><SStyledLink>Kazuki's portfolio</SStyledLink></Link>
-                <NavMenu />
-            </SHeaderContainer>
-        </SHeader>
-        <SpMenu />
-      </>
-    )
-}
+  return (
+    <>
+      <SHeader>
+        <SHeaderContainer>
+          <Link href="/">
+            <SStyledLink>Kazuki's portfolio</SStyledLink>
+          </Link>
+          <NavMenu />
+        </SHeaderContainer>
+      </SHeader>
+      <SpMenu />
+    </>
+  );
+};
 
 export default Header;
-
 
 const SHeader = styled.div`
   display: flex;
@@ -41,7 +41,7 @@ const SStyledLink = styled.a`
   color: #fff;
   padding-top: 2rem;
   cursor: pointer;
-  @media(max-width:600px) {
+  @media (max-width: 600px) {
     padding: 2rem;
-  } 
+  }
 `;
