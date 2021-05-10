@@ -29,6 +29,7 @@ export default About;
 
 const SAboutMain = styled.div`
   display: flex;
+  height: 66.6vh;
   @media (max-width: 800px) {
     display: block;
   }

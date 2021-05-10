@@ -16,18 +16,15 @@ export default Footer;
 
 const SFooter = styled.div`
   background-color: #404b75;
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  margin: 0;
   height: 5rem;
-  // margin-bottom: -5rem;
 `;
 
 const SCopyRight = styled.p`
   font-size: 2rem;
   color: #fff;
   text-align: center;
+  line-height: 5rem;
 `;
 
 const SPush = styled.div`

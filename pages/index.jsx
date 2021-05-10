@@ -38,6 +38,7 @@ const SBody = styled.div`
 const SContainer = styled.div`
   width: 80%;
   margin: 0 auto;
+  height: 79.7vh;
 `;
 const SHomeContent = styled.div`
   display: flex;

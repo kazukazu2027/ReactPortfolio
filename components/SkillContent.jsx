@@ -34,6 +34,12 @@ const SkillContent = () => {
           </SSkill>
           <SSkill>
             <SSkillImage>
+              <SImg src="typescript.png" alt="" />
+              <SSkillText>TypeScript</SSkillText>
+            </SSkillImage>
+          </SSkill>
+          <SSkill>
+            <SSkillImage>
               <SImg src="next.png" alt="" />
               <SSkillText>Next.js</SSkillText>
             </SSkillImage>
@@ -63,13 +69,7 @@ const SSkillTop = styled.div`
 const SSkillBottom = styled.div`
   display: flex;
   justify-content: space-around;
-  margin: 10rem 20rem;
-  @media (max-width: 1000px) {
-    margin: 10rem 10rem;
-  }
-  @media (max-width: 600px) {
-    margin: 10rem 5rem;
-  }
+  margin-top: 10rem;
 `;
 
 const SImg = styled.img`

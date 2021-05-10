@@ -2,19 +2,43 @@ import React from "react";
 import styled from "styled-components";
 
 const Work = (props) => {
-  const { imgSrc, workTitle, workIntroduction, Url } = props;
-
+  const { imgSrc, workTitle, skill, environment, deploy, Url, Lists } = props;
   return (
     <STodoList>
-      <SPicture>
-        <a href={Url}>
-          <SImg src={imgSrc} alt="" />
-        </a>
-      </SPicture>
-      <SExplanation>
-        <SWorkTitle>{workTitle}</SWorkTitle>
-        <SWorkIntroduction>{workIntroduction}</SWorkIntroduction>
-      </SExplanation>
+      <SWorkTitle>{workTitle}</SWorkTitle>
+      <SContainer>
+        <STodoListLeft>
+          <SPicture>
+            <a href={Url}>
+              <SImg src={imgSrc} alt="" />
+            </a>
+          </SPicture>
+        </STodoListLeft>
+        <SExplanation>
+          <SExplanationLeft>
+            <SSkill>
+              <SUse>使用技術</SUse>
+              <SSkillContent>{skill}</SSkillContent>
+            </SSkill>
+            <SEnvironment>
+              <SEnvironmentTitle>環境構築</SEnvironmentTitle>
+              <SEnvironmentContent>{environment}</SEnvironmentContent>
+            </SEnvironment>
+            <SDeploy>
+              <SDeployTitle>デプロイ</SDeployTitle>
+              <SDeployContent>{deploy}</SDeployContent>
+            </SDeploy>
+          </SExplanationLeft>
+          <SExplanationRight>
+            <SStudyTitle>学んだこと</SStudyTitle>
+            <SUl>
+              {Lists.map((list, index) => {
+                return <SStudy key={index}>{list}</SStudy>;
+              })}
+            </SUl>
+          </SExplanationRight>
+        </SExplanation>
+      </SContainer>
     </STodoList>
   );
 };
@@ -22,21 +46,21 @@ const Work = (props) => {
 export default Work;
 
 const STodoList = styled.div`
-  display: flex;
   padding: 0;
-  margin: 1.5rem 0;
+  margin: 0 0 3rem 0;
   @media (max-width: 700px) {
     display: block;
-    width: 50%;
   }
-  @media (max-width: 450px) {
-    width: 70%;
-    margin: 0 auto;
+`;
+
+const SContainer = styled.div`
+  display: flex;
+  @media (max-width: 900px) {
+    display: block;
   }
 `;
 
 const SPicture = styled.div`
-  width: 30%;
   display: inline-block;
   box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
   @media (max-width: 700px) {
@@ -52,31 +76,136 @@ const SPicture = styled.div`
 
 const SImg = styled.img`
   width: 100%;
-  @media (max-width: 700px) {
-    width: 100%;
-    height: 15rem;
-  }
 `;
 
 const SExplanation = styled.div`
   margin-left: 3rem;
   width: 70%;
+  display: flex;
+  @media (max-width: 900px) {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 90%;
+  }
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
 `;
 
 const SWorkTitle = styled.h2`
   font-size: 3rem;
   margin: 0;
+  padding-bottom: 2rem;
   @media (max-width: 700px) {
     margin-top: 3rem;
   }
 `;
 
-const SWorkIntroduction = styled.p`
-  font-size: 2rem;
+const SSkill = styled.div``;
+
+const SUse = styled.h2`
+  font-size: 2.2rem;
+  margin: 0;
+  @media (max-width: 550px) {
+    font-size: 2.5rem;
+  }
+`;
+const SSkillContent = styled.p`
+  margin: 0;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  @media (max-width: 550px) {
+    font-size: 2.2rem;
+  }
+`;
+
+const STodoListLeft = styled.div`
+  width: 40%;
+  padding-right: 3rem;
+  @media (max-width: 900px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media (max-width: 550px) {
+    padding-right: initial;
+  }
+`;
+
+const SEnvironment = styled.div`
+  margin: 1rem 0;
+`;
+
+const SEnvironmentTitle = styled.h2`
+  font-size: 2.2rem;
+  margin: 0;
+  @media (max-width: 550px) {
+    font-size: 2.5rem;
+  }
+`;
+
+const SEnvironmentContent = styled.p`
+  margin: 0;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  @media (max-width: 550px) {
+    font-size: 2.2rem;
+  }
+`;
+
+const SDeploy = styled.div``;
+
+const SDeployTitle = styled.h2`
+  font-size: 2.2rem;
+  margin: 0;
+  @media (max-width: 550px) {
+    font-size: 2.5rem;
+  }
+`;
+
+const SDeployContent = styled.p`
+  margin: 0;
+  margin-top: 0.3rem;
+  font-size: 1.8rem;
+  @media (max-width: 550px) {
+    font-size: 2.2rem;
+  }
+`;
+
+const SExplanationLeft = styled.div`
+  width: 40%;
+  @media (max-width: 550px) {
+    width: 100%;
+  }
+`;
+
+const SExplanationRight = styled.div`
+  padding-left: 5rem;
+  @media (max-width: 550px) {
+    padding-left: initial;
+    margin-top: 1rem;
+  }
+`;
+
+const SStudyTitle = styled.h2`
+  font-size: 2.2rem;
+  margin: 0;
+  @media (max-width: 550px) {
+    font-size: 2.5rem;
+  }
+`;
+
+const SUl = styled.ul`
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5rem;
+`;
+
+const SStudy = styled.li`
+  font-size: 1.8rem;
+  list-style-position: inside;
+  line-height: 1.3;
   word-break: break-all;
-  @media (max-width: 700px) {
-    word-break: break-all;
-    width: 120%;
-    margin-bottom: 3rem;
+  @media (max-width: 550px) {
+    font-size: 2.2rem;
   }
 `;

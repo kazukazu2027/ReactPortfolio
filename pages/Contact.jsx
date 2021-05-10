@@ -43,6 +43,7 @@ export default Contact;
 const SContactContainer = styled.div`
   width: 80%;
   margin: 0 auto;
+  height: 76.7vh;
 `;
 
 const SSnsContent = styled.div`

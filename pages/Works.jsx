@@ -8,6 +8,21 @@ import Work from "../components/Work";
 import Head from "next/head";
 
 const Works = () => {
+  const todoLists = [
+    "create-react-appの環境構築",
+    "Hooksの使い方",
+    "コンポーネント",
+    "github pagesを使ったデプロイ",
+  ];
+  const imageLists = ["reactを用いたデータのやり取り"];
+  const portfolioLists = ["Next js", "Nextのページ遷移"];
+  const shopLists = [
+    "現在地の取得",
+    "get static props",
+    "promiseを用いた非同期処理",
+  ];
+  const movieLists = ["webpackを用いた環境構築", "TypeScript", "tailwind css"];
+
   return (
     <>
       <GlobalStyle />
@@ -19,19 +34,50 @@ const Works = () => {
             imgSrc="todolist.png"
             Url="http://kazukazu2027.github.io/reactTodoList"
             workTitle="TODOリスト"
-            workIntroduction="Reactを用いてTODOリストを作成しました。React Hookで実装しています。"
+            skill="React/styled-components"
+            environment="create-react-app"
+            deploy="github pages"
+            Lists={todoLists}
           />
           <Work
             imgSrc="pictureSearch.png"
             Url="http://kazukazu2027.github.io/pictureSearch"
             workTitle="画像検索アプリ"
-            workIntroduction="Reactを用いて画像検索アプリを作成しました。画像は非同期処理を用いて表示させています。また、styled-componentsを採用し、検索ボタンはmaterial-uiを用いて作成しました。"
+            skill="React/styled-components"
+            environment="create-react-app"
+            deploy="github pages"
+            Lists={imageLists}
+
           />
           <Work
             imgSrc="portfolio.png"
             Url="https://portfolioreact-ibr233y61-kazukazu2027.vercel.app/"
             workTitle="ポートフォリオ"
-            workIntroduction="ReactとNext.jsを用いてポートフォリオを作成しました。デプロイはVercelを使っています。"
+            skill="React/Next js/styled-components"
+            environment="create-next-app"
+            deploy="vercel"
+            Lists={portfolioLists}
+
+          />
+          <Work
+            imgSrc="shop_search.png"
+            Url="https://portfolioreact-ibr233y61-kazukazu2027.vercel.app/"
+            workTitle="居酒屋検索アプリ"
+            skill="React/Next js/styled-components"
+            environment="create-next-app"
+            deploy="vercel"
+            Lists={shopLists}
+
+          />
+          <Work
+            imgSrc="movie_search.png"
+            Url="https://portfolioreact-ibr233y61-kazukazu2027.vercel.app/"
+            workTitle="映画検索アプリ"
+            skill="React/TypeScript/Next js/tailwind css"
+            environment="webpack"
+            deploy="github pages"
+            Lists={movieLists}
+
           />
         </SWorkContainer>
       </SContentContainer>
