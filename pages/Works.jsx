@@ -15,7 +15,7 @@ const Works = () => {
   ];
   const imageLists = ["reactを用いたデータのやり取り"];
   const portfolioLists = ["Next js", "Nextのページ遷移"];
-  const shopLists = ["現在地の取得", "SSRの実装", "promiseを用いた非同期処理"];
+  const shopLists = ["現在地の取得", "SSGの実装", "promiseを用いた非同期処理"];
   const movieLists = ["webpackを用いた環境構築", "TypeScript", "tailwind css"];
 
   return (
