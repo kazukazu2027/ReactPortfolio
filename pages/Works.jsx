@@ -45,7 +45,7 @@ const Works = () => {
           />
           <Work
             imgSrc="portfolio.png"
-            Url="https://portfolio-ebon-five.vercel.app/"
+            Url="https://portfolio-kazukazu2027.vercel.app/"
             workTitle="ポートフォリオ"
             skill="React/Next js/styled-components"
             environment="create-next-app"
@@ -54,7 +54,7 @@ const Works = () => {
           />
           <Work
             imgSrc="shop_search.png"
-            Url="https://shop-search-jpmwtygyr-kazukazu2027.vercel.app/"
+            Url="https://shop-search.vercel.app/"
             workTitle="居酒屋検索アプリ"
             skill="React/Next js/styled-components"
             environment="create-next-app"
