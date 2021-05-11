@@ -5,7 +5,6 @@ import GlobalStyle from "../components/GlobalStyle";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Work from "../components/Work";
-import Head from "next/head";
 
 const Works = () => {
   const todoLists = [
@@ -18,7 +17,7 @@ const Works = () => {
   const portfolioLists = ["Next js", "Nextのページ遷移"];
   const shopLists = [
     "現在地の取得",
-    "get static props",
+    "SSRの実装",
     "promiseを用いた非同期処理",
   ];
   const movieLists = ["webpackを用いた環境構築", "TypeScript", "tailwind css"];
@@ -36,7 +35,7 @@ const Works = () => {
             workTitle="TODOリスト"
             skill="React/styled-components"
             environment="create-react-app"
-            deploy="github pages"
+            deploy="GitHub Pages"
             Lists={todoLists}
           />
           <Work
@@ -45,7 +44,7 @@ const Works = () => {
             workTitle="画像検索アプリ"
             skill="React/styled-components"
             environment="create-react-app"
-            deploy="github pages"
+            deploy="GitHub Pages"
             Lists={imageLists}
 
           />
@@ -61,7 +60,7 @@ const Works = () => {
           />
           <Work
             imgSrc="shop_search.png"
-            Url="https://portfolioreact-ibr233y61-kazukazu2027.vercel.app/"
+            Url="https://shop-search-kcpqc65bl-kazukazu2027.vercel.app/Lists/Lists"
             workTitle="居酒屋検索アプリ"
             skill="React/Next js/styled-components"
             environment="create-next-app"
@@ -71,11 +70,11 @@ const Works = () => {
           />
           <Work
             imgSrc="movie_search.png"
-            Url="https://portfolioreact-ibr233y61-kazukazu2027.vercel.app/"
+            Url="https://kazukazu2027.github.io/movie_search/"
             workTitle="映画検索アプリ"
             skill="React/TypeScript/Next js/tailwind css"
             environment="webpack"
-            deploy="github pages"
+            deploy="GitHub Pages"
             Lists={movieLists}
 
           />

@@ -17,16 +17,16 @@ const Work = (props) => {
         <SExplanation>
           <SExplanationLeft>
             <SSkill>
-              <SUse>使用技術</SUse>
-              <SSkillContent>{skill}</SSkillContent>
+              <SExplanationTitle>使用技術</SExplanationTitle>
+              <SExplanationContent>{skill}</SExplanationContent>
             </SSkill>
             <SEnvironment>
-              <SEnvironmentTitle>環境構築</SEnvironmentTitle>
-              <SEnvironmentContent>{environment}</SEnvironmentContent>
+              <SExplanationTitle>環境構築</SExplanationTitle>
+              <SExplanationContent>{environment}</SExplanationContent>
             </SEnvironment>
             <SDeploy>
-              <SDeployTitle>デプロイ</SDeployTitle>
-              <SDeployContent>{deploy}</SDeployContent>
+              <SExplanationTitle>デプロイ</SExplanationTitle>
+              <SExplanationContent>{deploy}</SExplanationContent>
             </SDeploy>
           </SExplanationLeft>
           <SExplanationRight>
@@ -53,10 +53,31 @@ const STodoList = styled.div`
   }
 `;
 
+const SWorkTitle = styled.h2`
+  font-size: 3rem;
+  margin: 0;
+  padding-bottom: 2rem;
+  @media (max-width: 700px) {
+    margin-top: 3rem;
+  }
+`;
+
 const SContainer = styled.div`
   display: flex;
   @media (max-width: 900px) {
     display: block;
+  }
+`;
+
+const STodoListLeft = styled.div`
+  width: 40%;
+  padding-right: 3rem;
+  @media (max-width: 900px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media (max-width: 550px) {
+    padding-right: initial;
   }
 `;
 
@@ -92,42 +113,28 @@ const SExplanation = styled.div`
   }
 `;
 
-const SWorkTitle = styled.h2`
-  font-size: 3rem;
-  margin: 0;
-  padding-bottom: 2rem;
-  @media (max-width: 700px) {
-    margin-top: 3rem;
+const SExplanationLeft = styled.div`
+  width: 40%;
+  @media (max-width: 550px) {
+    width: 100%;
   }
 `;
 
 const SSkill = styled.div``;
 
-const SUse = styled.h2`
+const SExplanationTitle = styled.h2`
   font-size: 2.2rem;
   margin: 0;
   @media (max-width: 550px) {
     font-size: 2.5rem;
   }
 `;
-const SSkillContent = styled.p`
+const SExplanationContent = styled.p`
   margin: 0;
   font-size: 1.8rem;
   margin-top: 0.3rem;
   @media (max-width: 550px) {
     font-size: 2.2rem;
-  }
-`;
-
-const STodoListLeft = styled.div`
-  width: 40%;
-  padding-right: 3rem;
-  @media (max-width: 900px) {
-    width: 80%;
-    margin: 0 auto;
-  }
-  @media (max-width: 550px) {
-    padding-right: initial;
   }
 `;
 
@@ -135,48 +142,7 @@ const SEnvironment = styled.div`
   margin: 1rem 0;
 `;
 
-const SEnvironmentTitle = styled.h2`
-  font-size: 2.2rem;
-  margin: 0;
-  @media (max-width: 550px) {
-    font-size: 2.5rem;
-  }
-`;
-
-const SEnvironmentContent = styled.p`
-  margin: 0;
-  font-size: 1.8rem;
-  margin-top: 0.3rem;
-  @media (max-width: 550px) {
-    font-size: 2.2rem;
-  }
-`;
-
 const SDeploy = styled.div``;
-
-const SDeployTitle = styled.h2`
-  font-size: 2.2rem;
-  margin: 0;
-  @media (max-width: 550px) {
-    font-size: 2.5rem;
-  }
-`;
-
-const SDeployContent = styled.p`
-  margin: 0;
-  margin-top: 0.3rem;
-  font-size: 1.8rem;
-  @media (max-width: 550px) {
-    font-size: 2.2rem;
-  }
-`;
-
-const SExplanationLeft = styled.div`
-  width: 40%;
-  @media (max-width: 550px) {
-    width: 100%;
-  }
-`;
 
 const SExplanationRight = styled.div`
   padding-left: 5rem;
