@@ -19,7 +19,7 @@ const Works = () => {
   const movieLists = ["webpackを用いた環境構築", "TypeScript", "tailwind css"];
 
   return (
-    <>
+    <SDiv>
       <GlobalStyle />
       <Header />
       <SContentContainer>
@@ -73,15 +73,20 @@ const Works = () => {
         </SWorkContainer>
       </SContentContainer>
       <Footer />
-    </>
+    </SDiv>
   );
 };
 
 export default Works;
 
+const SDiv = styled.div`
+  position: absolute;
+`;
+
 const SContentContainer = styled.div`
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 4rem;
 `;
 
 const SWorkContainer = styled.div`

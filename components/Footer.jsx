@@ -17,7 +17,8 @@ export default Footer;
 const SFooter = styled.div`
   background-color: #404b75;
   width: 100%;
-  height: 5rem;
+  position: absolute;
+  bottom: 0;
 `;
 
 const SCopyRight = styled.p`
