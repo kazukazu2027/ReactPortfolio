@@ -54,8 +54,7 @@ const Works = () => {
           />
           <Work
             imgSrc="shop_search.png"
-            Url="shop-search.vercel.app
-            "
+            Url="https://shop-search-jpmwtygyr-kazukazu2027.vercel.app/"
             workTitle="居酒屋検索アプリ"
             skill="React/Next js/styled-components"
             environment="create-next-app"
