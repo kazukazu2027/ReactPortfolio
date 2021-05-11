@@ -15,11 +15,7 @@ const Works = () => {
   ];
   const imageLists = ["reactを用いたデータのやり取り"];
   const portfolioLists = ["Next js", "Nextのページ遷移"];
-  const shopLists = [
-    "現在地の取得",
-    "SSRの実装",
-    "promiseを用いた非同期処理",
-  ];
+  const shopLists = ["現在地の取得", "SSRの実装", "promiseを用いた非同期処理"];
   const movieLists = ["webpackを用いた環境構築", "TypeScript", "tailwind css"];
 
   return (
@@ -46,27 +42,25 @@ const Works = () => {
             environment="create-react-app"
             deploy="GitHub Pages"
             Lists={imageLists}
-
           />
           <Work
             imgSrc="portfolio.png"
-            Url="https://portfolioreact-ibr233y61-kazukazu2027.vercel.app/"
+            Url="https://portfolio-ebon-five.vercel.app/"
             workTitle="ポートフォリオ"
             skill="React/Next js/styled-components"
             environment="create-next-app"
             deploy="vercel"
             Lists={portfolioLists}
-
           />
           <Work
             imgSrc="shop_search.png"
-            Url="https://shop-search-kcpqc65bl-kazukazu2027.vercel.app/"
+            Url="shop-search.vercel.app
+            "
             workTitle="居酒屋検索アプリ"
             skill="React/Next js/styled-components"
             environment="create-next-app"
             deploy="vercel"
             Lists={shopLists}
-
           />
           <Work
             imgSrc="movie_search.png"
@@ -76,7 +70,6 @@ const Works = () => {
             environment="webpack"
             deploy="GitHub Pages"
             Lists={movieLists}
-
           />
         </SWorkContainer>
       </SContentContainer>
