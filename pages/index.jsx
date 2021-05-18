@@ -40,6 +40,7 @@ const SContainer = styled.div`
 `;
 const SHomeContent = styled.div`
   display: flex;
+  padding-top: 10rem;
   @media (max-width: 600px) {
     display: block;
   }
@@ -47,10 +48,8 @@ const SHomeContent = styled.div`
 
 const SHomeLeft = styled.div`
   width: 50%;
-  padding-top: 20rem;
   @media (max-width: 600px) {
     width: 100%;
-    padding-top: 6rem;
   }
 `;
 

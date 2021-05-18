@@ -41,7 +41,7 @@ export default HomeList;
 const SListContent = styled.div`
   width: 50%;
   padding-left: 10rem;
-  padding-top: 20rem;
+  padding-top: 2rem;
   @media (max-width: 600px) {
     width: 100%;
     padding-left: initial;
