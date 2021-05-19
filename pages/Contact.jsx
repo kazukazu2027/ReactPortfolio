@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import GlobalStyle from "../components/GlobalStyle";
 import SNS from "../components/SNS";
-import Head from "next/head";
 
 const Contact = () => {
   return (
