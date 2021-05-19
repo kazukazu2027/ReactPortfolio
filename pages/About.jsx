@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import GlobalStyle from "../components/GlobalStyle";
 import AboutLeft from "../components/AboutLeft";
 import AboutRight from "../components/AboutRight";
-import Head from "next/head";
 
 const About = () => {
   return (
@@ -38,4 +37,8 @@ const SAboutMain = styled.div`
 const SAboutContainer = styled.div`
     width: 80%;
     margin 0 auto;
+    @media (max-width: 800px) {
+      display: block;
+      padding-bottom: 6rem;
+    }
 `;

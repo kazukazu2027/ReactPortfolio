@@ -7,7 +7,7 @@ import HomeList from "../components/HomeList";
 
 export default function Home() {
   return (
-    <>
+    <SDiv>
       <GlobalStyle />
 
       <SBody>
@@ -23,24 +23,40 @@ export default function Home() {
         </SContainer>
         <Footer />
       </SBody>
-    </>
+    </SDiv>
   );
 }
+
+const SDiv = styled.div`
+position: relative；
+min-height: 100vh;
+box-sizing: border-box;
+`;
 
 const SBody = styled.div`
   background-color: #f1f1f1;
   padding: 0;
   margin: 0;
-  height: 100vh;
+  position: relative；
+  min-height: 100vh;
+  box-sizing: border-box;
 `;
 
 const SContainer = styled.div`
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 4rem;
+  @media (max-width: 425px) {
+    padding-bottom: 8rem;
+  }
 `;
+
 const SHomeContent = styled.div`
   display: flex;
   padding-top: 10rem;
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+  }
   @media (max-width: 600px) {
     display: block;
   }
@@ -62,6 +78,9 @@ const STitle = styled.h1`
 const SLead = styled.p`
   font-size: 3.5rem;
   padding-top: 7rem;
+  @media (max-width: 768px) {
+    padding-top: 3rem;
+  }
   @media (max-width: 600px) {
     padding: 3rem 0;
   }
