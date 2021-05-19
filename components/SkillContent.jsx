@@ -58,12 +58,6 @@ const SSkillTop = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 3rem;
-  @media (max-width: 700px) {
-    margin-top: 8rem;
-  }
-  @media (max-width: 500px) {
-    margin-top: 13rem;
-  }
 `;
 
 const SSkillBottom = styled.div`

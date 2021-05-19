@@ -25,7 +25,4 @@ export default Skills;
 const SSkillsContainer = styled.div`
   width: 80%;
   margin: 0 auto;
-  @media(max-width: 600px) {
-    padding-bottom: 4rem;
-  }
 `;
